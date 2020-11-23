@@ -49,6 +49,7 @@ Por otro lado también hemos añadido las clases **Client** , **Admin** y la cla
 -**ListaStoreUser** y esta clase se encarga de gestionar los diferentes tipos de usuarios que puede haber en la web.
 ```
 ```
+## Sobrecarga
 
 ## Interfaces y Genericos
 
@@ -83,14 +84,24 @@ public class Translator {
 ```
 A continuación hemos creado unos **ficheros.properties** en los que dentro introduces primero la palabrabraclave = Frase en el idioma de ese fichero. La estructura de el nombre de el fichero que hay que darle es: **nombreEtiqueta_id_paísIdioma.properties** . Por ejemplo en nuetro trabajo hemos creado estos dos ficheros:
 
-![fotoPA](https://user-images.githubusercontent.com/72611127/97563149-ef1eab80-19e2-11eb-8026-d271d4a9a632.jpeg)
+![1](https://user-images.githubusercontent.com/72611127/99972727-2fcdd280-2d9f-11eb-8199-edc3144b162b.jpeg)
 
 Gracias a las funciones y variables creadas en la clase **Traductor** que estan a continuación se puede usar el traductor en el **Menu**.
 ```ruby
 public class Translator {
+	
 	private Locale locale;
+	private Locale chLoc = new Locale("ch","CH");
 	private Locale enLoc = new Locale("en","US");
 	private Locale esLoc = new Locale("es","ES");
+	
+	public Translator() {
+		
+	}
+	public Locale getLocale() {
+		return this.locale;
+	}
+
 	
 	public String getTraduc(String word) {
 		return ResourceBundle.getBundle("Messages", locale).getString(word);
@@ -98,20 +109,53 @@ public class Translator {
 	
 	public Locale setLoc(int languag) {
 		if(languag == 1) {
-			locale = Translator.this.enLoc;	
-		}else {	
+			locale = Translator.this.enLoc;
+			
+		}else if(languag == 2){
+			
 			locale = Translator.this.esLoc;
+			
+		}else {
+			
+			locale = Translator.this.chLoc;
 		}
+		
 		return locale;
-	}
+	}	
+
 }
+
 ```
 Añadiendo un poco de código en **Menu** pidiendo por pantalla el idioma que quieres y cambiandolo dependiendo del seleccionado, se vería de esta manera:
 
-![foto2PA](https://user-images.githubusercontent.com/72611127/97564278-a0721100-19e4-11eb-9507-9ab78b5e4863.jpeg)
-![foto3Pa](https://user-images.githubusercontent.com/72611127/97564342-b8e22b80-19e4-11eb-9120-077f5dbb0138.jpeg)
+![foto2](https://user-images.githubusercontent.com/72611127/99972775-3c522b00-2d9f-11eb-831a-93f5bf1e04a0.jpeg)
 
+![foto3](https://user-images.githubusercontent.com/72611127/99972789-3f4d1b80-2d9f-11eb-872e-e1feb8eef5da.jpeg)
 
+![Foto4](https://user-images.githubusercontent.com/72611127/99972797-41af7580-2d9f-11eb-9c24-7518491798ae.jpeg)
+
+## Operador condicional
+El operador ternario es otro de los operadores condicionales. Es una forma reducida de escribir un **if-then-else**. El operador ternario es representado mediante el símbolo **?:**.
+
+La estructura del operador ternario es:
+`(expresion)?valor_true:valor_false;`
+
+En el caso de que la expresión tenga un valor de true se retorna el valor indicado después del cierre de interrogación **(?)** Y si la expresión tiene un valor de false se retorna el valor que esté después de los dos puntos **(:)**.
+
+El operador ternario se suele utilizar para decidir que valor asignar. Un ejemplo de código del operador ternario sería:
+```ruby
+int vble1 = 5;
+int vble2 = 4;
+int mayor;
+
+mayor = (vble1 > vble2)?vble1:vble2;
+
+System.out.println("El mayor de los dos números es " + mayor);
+```
+En est prática lo hemos utilizado en diferentes funciones, a continución se puede ver como cambia la estructura con el operador **?:**.
+
+![condicional](https://user-images.githubusercontent.com/72611127/99973639-432d6d80-2da0-11eb-98f0-39fbcea2b1ef.jpeg)
+![condicional2](https://user-images.githubusercontent.com/72611127/99973643-44f73100-2da0-11eb-8fbf-13ea9baf7ff2.jpeg)
 ## Math
 
 
