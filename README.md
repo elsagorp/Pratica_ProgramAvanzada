@@ -44,14 +44,84 @@ En el caso de querer un hotel que no tenga ni piscina ni restaurante se usaría 
 
 Por otro lado también hemos añadido las clases **Client** , **Admin** y la clase **ListaStoreUser**.
 
--**Client** almacena toda la información de los clientes.
-```
+-**Client** almacena toda la información de los clientes, implementado la interface **IBusqueda** con generics.
+```ruby
+public class Client<T> implements IBusqueda<T>{
+	private String nickname;
+	private String name;
+	private String surname;
+	private LocalDate birthdate;
+	private Vector<T> favs;
+
+	
+	public Client() {
+		
+	}
+	
+	 @Override
+	 public void addto(T h) {
+		 this.favs.add(h);
+	 }
+	 @Override
+	 public Object exist(String name) {
+		 for(int i=0; i<favs.size(); i++) {
+			 if (favs.get(i).equals(name)) {
+				 return favs.get(i);
+			 }
+		 }
+		 return null;
+	 }
+}
 ```
 -**Admin** almacena los datoss de los administradores del gestor de hoteles.
-```
+```ruby
+public class Admin {
+	private String userName;
+	private String password;
+	
+	public Admin(String userName,String pass) {
+		this.userName = userName;
+		this.password = pass;
+		
+	}
+}
 ```
 -**ListaStoreUser** y esta clase se encarga de gestionar los diferentes tipos de usuarios que puede haber en la web.
 ```
+public class ListaStoreUser {
+	private Vector<Admin> admins;
+	private Vector<Client> clients;
+	
+	public ListaStoreUser(Vector<Admin> adm) {
+		this.admins = adm;
+		this.clients = new Vector <Client>();
+	}
+
+	public Vector<Admin> getAdmins() {
+		return this.admins;
+	}
+
+	public void setAdmins(Vector<Admin> admins) {
+		this.admins = admins;
+	}
+	
+	public void addClient(Client c) {
+		this.clients.add(c);
+	}
+	
+	public String existAdmin(Admin a) {
+		for(Admin elem:this.admins) {
+			if(elem.equals(a)) return "Existacc";
+		}
+		return "Noexist";
+	}
+	public String existClient(Client c) {
+		for(Client elem:this.clients) {
+			if(elem.equals(c)) return "Existacc";
+		}
+		return "Noexist";
+	}
+}
 ```
 ## Sobrecarga
 La **sobrecarga de métodos** es útil para que el mismo método opere con parámetros de distinto tipo o que un mismo método reciba una lista de parámetros diferente. La **diferencia** entre dos métodos sobrecargados está en **su declaración y en le función que realizan**.
@@ -206,7 +276,7 @@ En est prática lo hemos utilizado en diferentes funciones, a continución se pu
 
 ## Refactorización
 La refactorización siempre tiene el sencillo y claro propósito de **mejorar el código**. Con un código **más efectivo**, puede facilitarse la integración de nuevos elementos sin incurrir en errores nuevos. Además, cuanto más fácil les resulte a los programadores leer el código, más rápido se familiarizarán con él y podrán **identificar y evitar los bugs de forma más eficiente**. Otro objetivo de la refactorización es mejorar el análisis de errores y la necesidad de mantenimiento del software. Poner a prueba el código ahorra esfuerzo a los programadores.
-```ruby
+```
 //Ejemplo
 // Antes:
 void imprimeFactura() {
