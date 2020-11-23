@@ -52,6 +52,14 @@ Por otro lado también hemos añadido las clases **Client** , **Admin** y la cla
 ## Sobrecarga
 
 ## Interfaces y Genericos
+Una **interfaz** es un modelo o plantilla que se utiliza para **desarrollar clases**. Esta declara métodos no estáticos y campos estáticos que pueden ser implementados por una o más clases, de forma que los objetos de estas clases tengan la misma interfaz pública. En esta prática hemos implementado la **interface IBusqueda** y además también hemos implementado los **generics**.
+
+![Interf](https://user-images.githubusercontent.com/72611127/99974802-ba173600-2da1-11eb-9187-909aa88ea483.jpeg)
+
+Una clase y una interfaz se pueden declarar usando tipos genéricos. Una clase
+o una interfaz que usan el tipo genérico T representan a una familia de tipos
+relacionados.
+
 
 ## Menu
 Hemos creado una clase **Menu** con un static void main. En esta clase es donde se crearan los diferentes objetos. Y donde estará situado el código que interactua con las personas que usen este programa. Y se irán llamando a las diferentes funciones.
@@ -156,6 +164,28 @@ En est prática lo hemos utilizado en diferentes funciones, a continución se pu
 
 ![condicional](https://user-images.githubusercontent.com/72611127/99973639-432d6d80-2da0-11eb-98f0-39fbcea2b1ef.jpeg)
 ![condicional2](https://user-images.githubusercontent.com/72611127/99973643-44f73100-2da0-11eb-8fbf-13ea9baf7ff2.jpeg)
+
+## Refactorización
+La refactorización siempre tiene el sencillo y claro propósito de **mejorar el código**. Con un código **más efectivo**, puede facilitarse la integración de nuevos elementos sin incurrir en errores nuevos. Además, cuanto más fácil les resulte a los programadores leer el código, más rápido se familiarizarán con él y podrán **identificar y evitar los bugs de forma más eficiente**. Otro objetivo de la refactorización es mejorar el análisis de errores y la necesidad de mantenimiento del software. Poner a prueba el código ahorra esfuerzo a los programadores.
+```ruby
+//Ejemplo
+// Antes:
+void imprimeFactura() {
+    imprimeEncabezado();
+    //imprime los detalles
+    System.out.println ("Nombre:        " +  nombre );
+    System.out.println ("Cantidad       " + getCantidad());
+}
+// Después
+void imprimeFactura() {
+    imprimeEncabezado();
+    imprimeDetalles(getCantidad());
+}
+void imprimeDetalles (double cantidad) {
+    System.out.println ("Nombre:        " +  nombre );
+    System.out.println ("Cantidad       " + cantidad );  // corregido
+}
+```
 ## Math
 
 
