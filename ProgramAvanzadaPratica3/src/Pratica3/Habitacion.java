@@ -1,27 +1,39 @@
 package Pratica3;
 
-public class Habitacion {
-    private int id;
-    private int capacidad;
+public class Habitacion extends Hotel{
+    private int num;
+    private int cap;
     private float prize;
     
-	public int getId() {
-		return id;
+	public Habitacion(String hotelName, String address, String city, int numRoom,int numStars, boolean full,boolean pool, boolean rest, int num, int cap,float price) {
+		super(hotelName, address, city,  numRoom, numStars, full,pool,rest);
+		this.num = num;
+		this.cap = cap;
+		this.prize = price;
 	}
-	public void setId(int id) {
-		this.id = id;
+
+	public int getNum() {
+		return num;
 	}
-	public int getCapacidad() {
-		return capacidad;
+
+	public void setNum(int num) {
+		this.num = num;
 	}
-	public void setCapacidad(int capacidad) {
-		this.capacidad = capacidad;
+
+	public int getCap() {
+		return cap;
+	}
+
+	public void setCap(int cap) {
+		this.cap = cap;
 	}
 
 	public float getPrize() {
 		return prize;
 	}
+
 	public void setPrize(float prize) {
 		this.prize = prize;
 	}
+	
 }
