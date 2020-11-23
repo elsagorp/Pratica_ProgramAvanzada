@@ -2,17 +2,21 @@
 En esta Prática continuamos desarrollando el código de la Prática anterior. Esta consistía en crear un programa con diferentes clases todo centrado en la gestión de hoteles. Y en esta tercera parte hemos añadido varias clases más que explicaremos mas adelante.
 
 ## Indice
-- [Diagrama de clases]
-- []
-- []
-- []
-- []
-- []
-- []
+- [Diagrama de clases](#Diagrama-de-clases)
+- [Herencia y Polimorfismo](#Herencia-y-Polimorfismo)
+- [Sobrecarga](#Sobrecarga)
+- [Interfaces y Genéricos](#Interfaces-y-Genéricos)
+- [Menu](#Menu)
+- [Internacionalización de la aplicación](#Internacionalización-de-la-aplicación)
+- [Operador condicional ?:](#Operador-condicional)
+- [Refactorización](#Refactorización)
+- [Math](#Math)
+- [LocalDate](#LocalDate)
+- [Sonar Lint](#Sonar-Lint)
 
 ## Diagrama de clases
 
-## Herencia y polimorfismo
+## Herencia y Polimorfismo
 En este trabajo hemos credo una superclase **Hotel** de la cual se extiende ha varias subclases: **Habitacion*, **HotelPool** , **HotelRestaurant** y **HotelPoolRestaurant**. Y todos los diferentes tipos de Hoteles se gestionan en la clase **ListaHotels**.
 
 -**Habitacion** estaía formada por todos los datos de cada habitación.
@@ -50,15 +54,50 @@ Por otro lado también hemos añadido las clases **Client** , **Admin** y la cla
 ```
 ```
 ## Sobrecarga
+La **sobrecarga de métodos** es útil para que el mismo método opere con parámetros de distinto tipo o que un mismo método reciba una lista de parámetros diferente. La **diferencia** entre dos métodos sobrecargados está en **su declaración y en le función que realizan**.
+```
+	public String getAtributos() {
+		return "Name of the hotel: " + getHotelName() + " \n" +
+				"Address: " + getAddress() + " \n" +
+				"City: " + getCity() + "\n" +
+				"Number of rooms: " + getNumRoom() + " \n" +
+				"Number of stars: " + getNumStars() + "\n" +
+				"Is full: " + isFull() + "\n";			
+				
+	}
+
+	public String getAtributos(ResourceBundle sentence) {
+		return sentence.getString("HotelName") + getHotelName() + " \n"+
+				sentence.getString("Address") + getAddress() + " \n"+
+				sentence.getString("City") + getCity()+ "\n" +
+				sentence.getString("NumRoom") + getNumRoom() + " \n" +
+				sentence.getString("NumStars") + getNumStars() + "\n" +
+				sentence.getString("Full") + sentence.getString(isFu())+ "\n";			
+				
+	}
+```
+
 
 ## Interfaces y Genericos
 Una **interfaz** es un modelo o plantilla que se utiliza para **desarrollar clases**. Esta declara métodos no estáticos y campos estáticos que pueden ser implementados por una o más clases, de forma que los objetos de estas clases tengan la misma interfaz pública. En esta prática hemos implementado la **interface IBusqueda** y además también hemos implementado los **generics**.
 
 ![Interf](https://user-images.githubusercontent.com/72611127/99974802-ba173600-2da1-11eb-9187-909aa88ea483.jpeg)
 
-Una clase y una interfaz se pueden declarar usando tipos genéricos. Una clase
-o una interfaz que usan el tipo genérico T representan a una familia de tipos
-relacionados.
+Una clase y una interfaz se pueden declarar usando **tipos genérico**s. Sí usan el tipo genérico T este representa a una familia de tipos relacionados.
+```
+public class TipoGenerico<T> {
+	 private T valor;
+	 public TipoGenerico(T valor) {
+	 this.valor = valor;
+	 }
+	 public T getValor() {
+	 return this.valor;
+	 }
+	 public void setValor(T valor) {
+	 this.valor = valor;
+	 }
+}
+```
 
 
 ## Menu
