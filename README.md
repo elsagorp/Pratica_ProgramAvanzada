@@ -87,7 +87,7 @@ public class Admin {
 }
 ```
 -**ListaStoreUser** y esta clase se encarga de gestionar los diferentes tipos de usuarios que puede haber en la web.
-```
+```ruby
 public class ListaStoreUser {
 	private Vector<Admin> admins;
 	private Vector<Client> clients;
@@ -125,7 +125,7 @@ public class ListaStoreUser {
 ```
 ## Sobrecarga
 La **sobrecarga de métodos** es útil para que el mismo método opere con parámetros de distinto tipo o que un mismo método reciba una lista de parámetros diferente. La **diferencia** entre dos métodos sobrecargados está en **su declaración y en le función que realizan**.
-```
+```ruby
 	public String getAtributos() {
 		return "Name of the hotel: " + getHotelName() + " \n" +
 				"Address: " + getAddress() + " \n" +
@@ -154,7 +154,7 @@ Una **interfaz** es un modelo o plantilla que se utiliza para **desarrollar clas
 ![Interf](https://user-images.githubusercontent.com/72611127/99974802-ba173600-2da1-11eb-9187-909aa88ea483.jpeg)
 
 Una clase y una interfaz se pueden declarar usando **tipos genérico**s. Sí usan el tipo genérico T este representa a una familia de tipos relacionados.
-```
+```ruby
 public class TipoGenerico<T> {
 	 private T valor;
 	 public TipoGenerico(T valor) {
