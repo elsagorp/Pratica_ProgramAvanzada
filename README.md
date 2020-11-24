@@ -319,6 +319,8 @@ Esta clase representa la librería matemática de Java. Su constructor es privad
 | pow(double a, double b)	 | Devuelve el valor del primer argumento elevado a la potencia del segundo argumento. |
 | random()	 | Devuelve un doublevalor con un signo positivo, mayor o igual que 0.0 y menor que 1.0. |
 
+En esta prática hemos utilizaado la función **max** para dentro de la **ListaHotels** ir comparando los precios y guardando el que es más caro de ellos, haciendo un filtrado.
+
 ## LocalDate
 Para usar una clase con **LocalDate** , hemos creado la clase **Cliente**. En la que a partir de que el usuario introduzca su fecha de nacimiento, una función para calcular su edad usa ese dato y con **LocalDate** de  la fecha actual saca la edad del usuario. Utilizando los diferentes métodos de la clase **LocalDate** . Se añade esta clase con ```import java.time.LocalDate;```. Y también hemos utilizado la librería ```import java.time.format.DateTimeFormatter;``` para establecer el formato que queremos. Y además lo utilizamos para dar el día actual cuando imprimes los datos del cliente.
 
