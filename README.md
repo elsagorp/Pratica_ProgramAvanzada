@@ -15,6 +15,7 @@ En esta Prática continuamos desarrollando el código de la Prática anterior. E
 - [Sonar Lint](#Sonar-Lint)
 
 ## Diagrama de clases
+En este **diagrama de clases** no hemos añadido los **get y set** ya que se da por hecho que las clases con nuevas variables los tienen.
 
 ## Herencia y Polimorfismo
 En este trabajo hemos credo una superclase **Hotel** de la cual se extiende ha varias subclases: **Habitacion*, **HotelPool** , **HotelRestaurant** y **HotelPoolRestaurant**. Y todos los diferentes tipos de Hoteles se gestionan en la clase **ListaHotels**.
@@ -320,6 +321,9 @@ Esta clase representa la librería matemática de Java. Su constructor es privad
 | random()	 | Devuelve un doublevalor con un signo positivo, mayor o igual que 0.0 y menor que 1.0. |
 
 En esta prática hemos utilizaado la función **max** para dentro de la **ListaHotels** ir comparando los precios y guardando el que es más caro de ellos, haciendo un filtrado.
+
+![Math](https://user-images.githubusercontent.com/72611127/100087839-93173d80-2e4f-11eb-8c55-d863bdfb774b.jpeg)
+
 
 ## LocalDate
 Para usar una clase con **LocalDate** , hemos creado la clase **Cliente**. En la que a partir de que el usuario introduzca su fecha de nacimiento, una función para calcular su edad usa ese dato y con **LocalDate** de  la fecha actual saca la edad del usuario. Utilizando los diferentes métodos de la clase **LocalDate** . Se añade esta clase con ```import java.time.LocalDate;```. Y también hemos utilizado la librería ```import java.time.format.DateTimeFormatter;``` para establecer el formato que queremos. Y además lo utilizamos para dar el día actual cuando imprimes los datos del cliente.
