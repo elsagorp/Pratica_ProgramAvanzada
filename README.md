@@ -18,7 +18,7 @@ En esta Prática continuamos desarrollando el código de la Prática anterior. E
 En este **diagrama de clases** no hemos añadido los **get y set** ya que se da por hecho que las clases con nuevas variables los tienen.
 
 ## Herencia y Polimorfismo
-En este trabajo hemos credo una superclase **Hotel** de la cual se extiende ha varias subclases: **Habitacion*, **HotelPool** , **HotelRestaurant** y **HotelPoolRestaurant**. Y todos los diferentes tipos de Hoteles se gestionan en la clase **ListaHotels**.
+En este trabajo hemos credo una superclase **Hotel** de la cual se extiende ha varias subclases: **Habitacion*, **HotelPool** , **HotelRestaurant** y **HotelPoolRestaurant**. Y todos los diferentes tipos de Hoteles se gestionan en la clase **ListaHotels**, la cual utiliza la interfaz **IBusqueda**.
 
 -**Habitacion** estaía formada por todos los datos de cada habitación.
 ```ruby
