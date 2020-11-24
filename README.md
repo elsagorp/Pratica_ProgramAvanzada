@@ -296,7 +296,28 @@ void imprimeDetalles (double cantidad) {
 }
 ```
 ## Math
+Esta clase representa la librería matemática de Java. Su constructor es privado, lo que nos permite crear instancias de la clase. Utilizaremos public para poder llamarla desde cualquier lugar y static para que necesite inicializarla. Tiene muchos métodos, algunos de los más importantes son:
 
+| Método  | Descripción |
+| ------------- | ------------- |
+| abs(double a)	 | Devuelve el valor absoluto de un valor double introducido como parámetro. |
+| abs(float a)	 | Devuelve el valor absoluto de un valor float introducido como parámetro. |
+| abs(int a)	 | Devuelve el valor absoluto de un valor Entero introducido como parámetro. |
+| abs(long a)	 | Devuelve el valor absoluto de un valor long introducido como parámetro. |
+| cos(double a)	 | Devuelve el coseno trigonométrico de un ángulo. |
+| exp(double a)	 | Devuelve el número e de Euler elevado a la potencia de un doublevalor. |
+| max(double a, double b)	 | Devuelve el mayor de dos valores double |
+| max(float a, float b)	 | Devuelve el mayor de dos valores float. |
+| max(int a, int b)	 | Devuelve el mayor de dos valores Enteros. |
+| max(long a, long b)	 | Devuelve el mayor de dos valores long. |
+| min(double a, double b)	 | Devuelve el menor de dos valores double. |
+| min(float a, float b)	 | Devuelve el menor de dos valores float. |
+| min(int a, int b)	 | Devuelve el menor de dos valores enteros. |
+| min(long a, long b)	 | Devuelve el menor de dos valores long. |
+| multiplyExact(int x, int y)	 | Devuelve el producto de los argumentos, lanzando una excepción si el resultado desborda un int. |
+| multiplyExact(long x, long y)	 | Devuelve el producto de los argumentos, lanzando una excepción si el resultado desborda un long. |
+| pow(double a, double b)	 | Devuelve el valor del primer argumento elevado a la potencia del segundo argumento. |
+| random()	 | Devuelve un doublevalor con un signo positivo, mayor o igual que 0.0 y menor que 1.0. |
 
 ## LocalDate
 Para usar una clase con **LocalDate** , hemos creado la clase **Cliente**. En la que a partir de que el usuario introduzca su fecha de nacimiento, una función para calcular su edad usa ese dato y con **LocalDate** de  la fecha actual saca la edad del usuario. Utilizando los diferentes métodos de la clase **LocalDate** . Se añade esta clase con ```import java.time.LocalDate;```. Y también hemos utilizado la librería ```import java.time.format.DateTimeFormatter;``` para establecer el formato que queremos. Y además lo utilizamos para dar el día actual cuando imprimes los datos del cliente.
