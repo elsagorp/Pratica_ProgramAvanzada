@@ -17,6 +17,9 @@ En esta Prática continuamos desarrollando el código de la Prática anterior. E
 ## Diagrama de clases
 En este **diagrama de clases** no hemos añadido los **get y set** ya que se da por hecho que las clases con nuevas variables los tienen.
 
+![diagrama1](https://user-images.githubusercontent.com/72611127/100228470-050c8700-2f23-11eb-8adf-29428c86669c.jpeg)
+![diagrama2](https://user-images.githubusercontent.com/72611127/100228473-06d64a80-2f23-11eb-9bf0-6959ef507d2a.jpeg)
+
 ## Herencia y Polimorfismo
 En este trabajo hemos credo una superclase **Hotel** de la cual se extiende ha varias subclases: **Habitacion*, **HotelPool** , **HotelRestaurant** y **HotelPoolRestaurant**. Y todos los diferentes tipos de Hoteles se gestionan en la clase **ListaHotels**, la cual utiliza la interfaz **IBusqueda**.
 
