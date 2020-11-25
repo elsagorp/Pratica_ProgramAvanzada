@@ -11,8 +11,8 @@ public class HotelRestaur extends Hotel implements Building{
 	private int numStars;
 	private int maxCapacity;
 	
-	public HotelRestaur(String hotelName, String address, String city, int numRoom, int numStarsH, boolean full,boolean pool,boolean rest,boolean restaurTerrace,String name, String typeFood, int numTable, int numStars, int maxCapacity) {
-		super( hotelName, address, city, numRoom, numStars, full,pool,rest);
+	public HotelRestaur(String hotelName, String address, String city, int numRoom, int numStarsH, boolean full,boolean pool,boolean rest,float prize,boolean restaurTerrace,String name, String typeFood, int numTable, int numStars, int maxCapacity) {
+		super( hotelName, address, city, numRoom, numStars, full,pool,rest,prize);
 		this.name = name;
 		this.typeFood = typeFood;
 		this.numTable = numTable;

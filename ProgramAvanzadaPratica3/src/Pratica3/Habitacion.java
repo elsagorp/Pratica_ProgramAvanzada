@@ -3,13 +3,13 @@ package Pratica3;
 public class Habitacion extends Hotel{
     private int num;
     private int cap;
-    private float prize;
+
     
-	public Habitacion(String hotelName, String address, String city, int numRoom,int numStars, boolean full,boolean pool, boolean rest, int num, int cap,float price) {
-		super(hotelName, address, city,  numRoom, numStars, full,pool,rest);
+	public Habitacion(String hotelName, String address, String city, int numRoom,int numStars, boolean full,boolean pool, boolean rest,float prize, int num, int cap) {
+		super(hotelName, address, city,  numRoom, numStars, full,pool,rest,prize);
 		this.num = num;
 		this.cap = cap;
-		this.prize = price;
+		
 	}
 
 	public int getNum() {
@@ -28,12 +28,6 @@ public class Habitacion extends Hotel{
 		this.cap = cap;
 	}
 
-	public float getPrize() {
-		return prize;
-	}
 
-	public void setPrize(float prize) {
-		this.prize = prize;
-	}
 	
 }

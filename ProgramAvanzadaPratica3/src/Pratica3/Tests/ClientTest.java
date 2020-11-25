@@ -1,6 +1,5 @@
 package Pratica3.Tests;
 import Pratica3.Client;
-import Pratica3.Hotel;
 
 import static org.junit.jupiter.api.Assertions.*;
 
