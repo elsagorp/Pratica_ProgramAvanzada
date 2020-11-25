@@ -14,7 +14,7 @@ public class Client<T> implements IBusqueda<T>{
 
 	
 	public Client() {
-		
+		this.favs = new Vector<T>();
 	}
 	 @Override
 	 public void addto(T h) {

@@ -51,6 +51,24 @@ public class ListaHotels  <T extends Hotel> implements IBusqueda<T>{
 		 
 	 }
 
+	 public Hotel maxCost() {	
+		 	Hotel h = new Hotel();
+		 	float ma = listaH.get(0).getPrize();
+		 	for(int i =0;i<listaH.size();i++) { 
+		 		if(ma < Math.max(listaH.get(i).getPrize(), listaH.get(i+1).getPrize()) ) {
+		 			ma = Math.max(listaH.get(i).getPrize(), listaH.get(i+1).getPrize()); 
+		 		}
+		    }
+			for(Hotel e:listaH) {
+		 		if (e.getPrize()==ma) {
+		        	
+		        	h  = e;
+		        }
+		    }
+		 	return h;
+
+	 } 
+	 
 	 public ArrayList <Hotel> filter(boolean pool, boolean rest) {
 		    ArrayList<Hotel> l = new ArrayList<Hotel>();	
 		 	

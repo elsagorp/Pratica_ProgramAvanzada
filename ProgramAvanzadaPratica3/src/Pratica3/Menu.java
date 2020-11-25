@@ -13,26 +13,26 @@ public class Menu {
 		
 		ArrayList <Hotel> l1 = new ArrayList <Hotel>();
 
-		HotelPool h1 = new HotelPool("Ibis","Ventas", "Madrid", 250,3, false,true,false, true, 54, 70);
+		HotelPool h1 = new HotelPool("Ibis","Ventas", "Madrid", 250,3, false,true,false, 95,true, 54, 70);
 		l1.add(h1);
-		HotelPool h2 = new HotelPool("Burj","Rafa street", "Dubai", 850,5, false ,true,false, true, 100, 120);
+		HotelPool h2 = new HotelPool("Burj","Rafa street", "Dubai", 850,5, false ,true,false, 120,true, 100, 120);
 		l1.add(h2);
 		
-		HotelRestaur h3 = new HotelRestaur("Loran","Parliament street", "Canada", 100,1, true,false,true, false, "Osaka", "Japnese food", 25, 4,90);
+		HotelRestaur h3 = new HotelRestaur("Loran","Parliament street", "Canada", 100,1, true,false,true, 28,false, "Osaka", "Japnese food", 25, 4,90);
 		l1.add(h3);
-		HotelRestaur h4 = new HotelRestaur("Shajon","Georgie street", "Dublin", 450,3, false,false,true, true, "Tariel", "Traditional food", 15, 3,48);
+		HotelRestaur h4 = new HotelRestaur("Shajon","Georgie street", "Dublin", 450,3, false,false,true, 70,true, "Tariel", "Traditional food", 15, 3,48);
 		l1.add(h4);
 		
-		HotelPool h5 = new HotelPool("Saron","Lieroy street", "London", 90,0, false ,true,false, false,15,20);
+		HotelPool h5 = new HotelPool("Saron","Lieroy street", "London", 90,0, false ,true,false,35, false,15,20);
 		l1.add(h5);
 		
-		HotelRestPool h6 = new HotelRestPool("Zent","Alcala", "Madrid", 300,4, false ,true,true, true,"Taberna de Juan","Spanish food", 30,3,105, false, 25,40);
+		HotelRestPool h6 = new HotelRestPool("Zent","Alcala", "Madrid", 300,4, false ,true,true, 90,true,"Taberna de Juan","Spanish food", 30,3,105, false, 25,40);
 		l1.add(h6);
 		
-		HotelRestPool h7 = new HotelRestPool("Vipen","Gijin street", "Berlin", 145,2, true ,true,true, false, "Skykitchen","Traditional german food",20,1,40,true,10,20);
+		HotelRestPool h7 = new HotelRestPool("Vipen","Gijin street", "Berlin", 145,2, true ,true,true,55, false, "Skykitchen","Traditional german food",20,1,40,true,10,20);
 		l1.add(h7);
 		
-		Hotel h8 = new Hotel("Akagamishi","Ankatsu street", "Tokyo", 145,2, true ,false,false);
+		Hotel h8 = new Hotel("Akagamishi","Ankatsu street", "Tokyo", 145,2, true ,false,false,50);
 		l1.add(h8);
 		
 		ListaHotels <Hotel> list = new ListaHotels(l1);
