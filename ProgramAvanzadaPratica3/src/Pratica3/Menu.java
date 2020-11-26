@@ -37,7 +37,7 @@ public class Menu {
 		
 		ListaHotels <Hotel> list = new ListaHotels(l1);
 		
-		Admin a1 = new Admin("ElsaGorP", "12345");
+		Admin a1 = new Admin("elsagorp", "12345");
 		Vector <Admin> a = new Vector<Admin> ();
 		a.add(a1);
 		
