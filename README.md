@@ -15,6 +15,7 @@ En esta Prática continuamos desarrollando el código de la Prática anterior. E
 - [Math](#Math)
 - [LocalDate](#LocalDate)
 - [Sonar Lint](#Sonar-Lint)
+- [Librería Crypto](#Librería-Crypto)
 
 ## Diagrama de clases
 En este **diagrama de clases** no hemos añadido los **get y set** ya que se da por hecho que las clases con nuevas variables los tienen.
@@ -365,3 +366,7 @@ Esta aplicación lo que hace es Lo que hace es enviarnos warnings a la lista de 
 
 
 ![sonar1](https://user-images.githubusercontent.com/72611127/99972539-ef6e5480-2d9e-11eb-9050-117dbe131fef.jpeg)
+
+
+
+## Librería Crypto
