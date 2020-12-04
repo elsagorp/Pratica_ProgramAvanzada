@@ -5,7 +5,9 @@ En esta Prática continuamos desarrollando el código de la Prática anterior. E
 - [Diagrama de clases](#Diagrama-de-clases)
 - [Herencia y Polimorfismo](#Herencia-y-Polimorfismo)
 - [Sobrecarga](#Sobrecarga)
-- [Interfaces y Genéricos](#Interfaces-y-Genéricos)
+- [Interfaces](#Interfaces)
+- [Genéricos](#Genéricos)
+- [Lectura de ficheros](#Lectura-de-ficheros)
 - [Menu](#Menu)
 - [Internacionalización de la aplicación](#Internacionalización-de-la-aplicación)
 - [Operador condicional ?:](#Operador-condicional)
@@ -152,10 +154,11 @@ La **sobrecarga de métodos** es útil para que el mismo método opere con pará
 ```
 
 
-## Interfaces y Genericos
+## Interfaces
 Una **interfaz** es un modelo o plantilla que se utiliza para **desarrollar clases**. Esta declara métodos no estáticos y campos estáticos que pueden ser implementados por una o más clases, de forma que los objetos de estas clases tengan la misma interfaz pública. En esta prática hemos implementado la **interface IBusqueda** y además también hemos implementado los **generics**.
 
 ![Interf](https://user-images.githubusercontent.com/72611127/99974802-ba173600-2da1-11eb-9187-909aa88ea483.jpeg)
+
 
 Una clase y una interfaz se pueden declarar usando **tipos genérico**s. Sí usan el tipo genérico T este representa a una familia de tipos relacionados.
 ```ruby
@@ -173,6 +176,19 @@ public class TipoGenerico<T> {
 }
 ```
 
+## Genéricos
+Una clase o una interfaz que usan el **tipo genérico T** representan a una familia de tipos relacionados. Por ejemplo, la **interfaz Lista**:
+
+```
+interface Lista<T> {
+ // métodos de Lista
+}
+```
+
+Lista<T> es una lista de tipo T. Declara una lista de objetos de tipo genérico que puede usar cualquier tipo de dato, desde uno primitivo hasta un tipo de objeto. Por jemplo, se puede definir ```Lista<Integer>```, ```Lista<String>```, ```Lista<Vehículo>```, etc. A diferencia de una ```Lista<T>```, las listas ```Lista<String>``` y ```Lista<Integer>``` solo admiten elementos de tipo ```String``` o ```Integer```. Si se añade un objeto de otro tipo, se produce un error durante la compilación.
+
+## Lectura de ficheros
+Para leer un fichero de texto normalmente se usan las **clases File y Scanner**. La **clase File** ofrece el método ```exists()``` para saber si un fichero existe o no. Para leer el contenido del fichero se crea una instancia de la **clase Scanner** que recibe como argumento la instancia del fichero de texto. La clase Scanner ofrece el método ```hasNext()``` para saber si hay más elementos que leer los métodos ```next()``` y ```nextLine()```para leer el siguiente elemento o una línea entera. 
 
 ## Menu
 Hemos creado una clase **Menu** con un static void main. En esta clase es donde se crearan los diferentes objetos. Y donde estará situado el código que interactua con las personas que usen este programa. Y se irán llamando a las diferentes funciones.
