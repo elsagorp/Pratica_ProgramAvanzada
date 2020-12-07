@@ -188,6 +188,15 @@ interface Lista<T> {
 
 Lista<T> es una lista de tipo T. Declara una lista de objetos de tipo genérico que puede usar cualquier tipo de dato, desde uno primitivo hasta un tipo de objeto. Por jemplo, se puede definir ```Lista<Integer>```, ```Lista<String>```, ```Lista<Vehículo>```, etc. A diferencia de una ```Lista<T>```, las listas ```Lista<String>``` y ```Lista<Integer>``` solo admiten elementos de tipo ```String``` o ```Integer```. Si se añade un objeto de otro tipo, se produce un error durante la compilación.
 
+Hemos creado la clase **Lista** en esta prática por varias razones:
+
+-Para almacenar los diferentes tipos de hoteles en un mismo array.
+
+-Y por si en un futuro cercano necesito almacenar otros tipos de datos relacionados con los hoteles lo hemos convertido en **Genéricos**.
+
+Hemos utilizado la biblioteca ```import java.util.ArrayList; ``` para poder utilizaar los arrays.
+
+
 ## Lectura de ficheros
 Para leer un fichero de texto normalmente se usan las **clases File y Scanner**. La **clase File** ofrece el método ```exists()``` para saber si un fichero existe o no. Para leer el contenido del fichero se crea una instancia de la **clase Scanner** que recibe como argumento la instancia del fichero de texto. La clase Scanner ofrece el método ```hasNext()``` para saber si hay más elementos que leer los métodos ```next()``` y ```nextLine()```para leer el siguiente elemento o una línea entera. 
 
