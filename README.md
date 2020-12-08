@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Pratica3PA
-=======
+
 # Pratica4PA
 En esta Prática continuamos desarrollando el código de la Prática anterior. Esta consistía en crear un programa con diferentes clases todo centrado en la gestión de hoteles. Y en esta tercera parte hemos añadido varias clases más que explicaremos mas adelante.
 
@@ -428,4 +426,5 @@ Esta aplicación lo que hace es Lo que hace es enviarnos warnings a la lista de 
 
 
 ## Librería Crypto
+
 >>>>>>> ea79cc2d96f39a4ff0d0a09c3a383211f63c550f
