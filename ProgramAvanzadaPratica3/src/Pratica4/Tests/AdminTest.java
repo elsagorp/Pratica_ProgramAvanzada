@@ -1,8 +1,9 @@
-package Pratica3.Tests;
-import Pratica3.Admin;
+package Pratica4.Tests;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import Pratica4.Admin;
 
 class AdminTest {
 	Admin a1 = new Admin("ElsaGorP", "12345");

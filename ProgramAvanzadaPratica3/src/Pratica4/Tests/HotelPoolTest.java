@@ -1,9 +1,10 @@
-package Pratica3.Tests;
-import Pratica3.HotelPool;
+package Pratica4.Tests;
 import static org.junit.jupiter.api.Assertions.*;
 
 
 import org.junit.jupiter.api.Test;
+
+import Pratica4.HotelPool;
 
 class HotelPoolTest {
 	HotelPool h = new HotelPool("Burj","Rafa street", "Dubai", 850,5, false ,true,false, 120,true, 100, 120);

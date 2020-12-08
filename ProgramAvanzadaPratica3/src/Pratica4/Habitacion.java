@@ -1,4 +1,4 @@
-package Pratica3;
+package Pratica4;
 
 public class Habitacion extends Hotel{
     private int num;
