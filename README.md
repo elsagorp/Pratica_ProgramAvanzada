@@ -426,9 +426,9 @@ Esta aplicación lo que hace es Lo que hace es enviarnos warnings a la lista de 
 
 
 ## Librería Crypto
-Proporciona las clases e interfaces para **realizar operaciones criptográficas**. Las operaciones criptográficas definidas en este paquete incluyen encriptación, generación de claves y acuerdo de claves y generación de códigos de autentificación de mensajes (MAC).
+Proporciona las clases e interfaces para **realizar operaciones criptográficas**. Las operaciones criptográficas definidas en este paquete incluyen encriptación, generación de claves y acuerdo de claves y generación de códigos de autentificación de mensajes (MAC). La **encriptación de datos o cifrado de archivos** es un procedimiento mediante el cual los archivos, o cualquier tipo de documento, se vuelven completamente ilegibles gracias a un algoritmo que desordena sus componentes(los cambia).
 
-Las clases más importantes incluidas en paquete son:
+Las clases más importantes incluidas en este paquete son:
 
 - **Cipher** :Repesenta un algoritmo de cifrado.
 - **KeyAgreement** :Proporciona la funcionalidad de un protocolo de acuerdo o intercambio de claves.
