@@ -1,4 +1,4 @@
-# Pratica3PA
+# Pratica4PA
 En esta Prática continuamos desarrollando el código de la Prática anterior. Esta consistía en crear un programa con diferentes clases todo centrado en la gestión de hoteles. Y en esta tercera parte hemos añadido varias clases más que explicaremos mas adelante.
 
 ## Indice
