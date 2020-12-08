@@ -1,4 +1,4 @@
-package Pratica3;
+package Pratica4;
 
 import java.util.Vector;
 
@@ -25,7 +25,7 @@ public class ListaStoreUser {
 	
 	public String existAdmin(Admin a) {
 		for(Admin elem:this.admins) {
-			if(elem.equals(a)) return "Existacc";
+			if(elem.getUserName().equals(a.getUserName())&&elem.getPassword().equals(a.getPassword())) return "Existacc";
 		}
 		return "Noexist";
 	}

@@ -1,9 +1,10 @@
-package Pratica3.Tests;
-import Pratica3.HotelRestaur;
+package Pratica4.Tests;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
+
+import Pratica4.HotelRestaur;
 
 public class HotelRestaurTest {
 	HotelRestaur h = new HotelRestaur("Loran","Parliament street", "Canada", 100,1, true,false,true, 28, false, "Osaka", "Japanese food", 25, 4,90);

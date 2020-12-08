@@ -1,9 +1,9 @@
-package Pratica3.Tests;
-import Pratica3.Client;
-
+package Pratica4.Tests;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import Pratica4.Client;
 
 class ClientTest {
 

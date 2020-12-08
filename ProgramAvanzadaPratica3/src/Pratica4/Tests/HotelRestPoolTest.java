@@ -1,7 +1,9 @@
-package Pratica3.Tests;
-import Pratica3.HotelRestPool;
+package Pratica4.Tests;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import Pratica4.HotelRestPool;
+
 import static org.junit.Assert.assertEquals;
 
 
