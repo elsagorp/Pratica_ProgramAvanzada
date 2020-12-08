@@ -232,10 +232,18 @@ En esta prática esto lo hemos utilizado para leer los menus de los diferentes r
 		 }
 		 
 		 System.out.println(menu);
-	 }
-	 
+	 }	 
 
 ```
+Y despues introduciendo esta función en el menu, para poder escribir por pantalla el nombre del restaurante que quieras mirar. Quedaría de esta manera:
+
+![Taberna](https://user-images.githubusercontent.com/72611127/101485851-12326880-395c-11eb-9eda-3a1237c84520.jpeg)
+
+![Tariel](https://user-images.githubusercontent.com/72611127/101485856-13fc2c00-395c-11eb-8840-e0a4b5eab75a.jpeg)
+
+![Sky](https://user-images.githubusercontent.com/72611127/101485867-152d5900-395c-11eb-94f8-53ecdb65dcb6.jpeg)
+
+![Osaka](https://user-images.githubusercontent.com/72611127/101485873-18284980-395c-11eb-9288-406118bcfd0c.jpeg)
 
 
 ## Menu
