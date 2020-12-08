@@ -1,6 +1,9 @@
 package Pratica3;
 
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.File;
 import java.util.ResourceBundle;
 
 public class ListaHotels  <T extends Hotel> implements IBusqueda<T>{
@@ -24,6 +27,34 @@ public class ListaHotels  <T extends Hotel> implements IBusqueda<T>{
 		 }
 		 return null;
 	 }
+	 
+	 
+	 public void readMenu(String restName) {
+		 FileReader fil = null;
+		 BufferedReader bf = null;
+		 
+		 String menu = "";
+		 
+		 try {
+			 
+			 String rout = "C:\\Users\\jfgor\\Desktop\\SegundoAñoUniversidad\\ProgramAvanz\\MenusPratica4\\" + restName + ".txt";
+			 
+			 fil = new FileReader (rout);
+			 bf = new BufferedReader(fil);
+			 
+			 String line;
+			 while((line = bf.readLine()) != null) {
+				
+				 menu = menu + line + "\n";
+				 
+			 }
+		 }catch(Exception e) {
+			 
+		 }
+		 
+		 System.out.println(menu);
+	 }
+	 
 	 public String consultaHotel() {
 
 		 String s = "List: \n";
