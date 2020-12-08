@@ -426,7 +426,7 @@ Esta aplicación lo que hace es Lo que hace es enviarnos warnings a la lista de 
 
 
 ## Librería Crypto
-Proporciona las clases e interfaces para **realizar operaciones criptográficas**. Las operaciones criptográficas definidas en este paquete incluyen encriptación, generación de claves y acuerdo de claves y generación de códigos de autentificación de mensajes (MAC). La **encriptación de datos o cifrado de archivos** es un procedimiento mediante el cual los archivos, o cualquier tipo de documento, se vuelven completamente ilegibles gracias a un algoritmo que desordena sus componentes(los cambia).
+Proporciona las clases e interfaces para **realizar operaciones criptográficas**. Las operaciones criptográficas definidas en este paquete incluyen encriptación, generación de claves y acuerdo de claves y generación de códigos de autentificación de mensajes (MAC). La **encriptación de datos o cifrado de archivos** es un procedimiento mediante el cual los archivos, o cualquier tipo de documento, se vuelven completamente ilegibles gracias a un algoritmo que desordena sus componentes(los cambia). 
 
 Las clases más importantes incluidas en este paquete son:
 
@@ -435,3 +435,9 @@ Las clases más importantes incluidas en este paquete son:
 - **KeyGenerator** :Propociona las funciones de un generador de claves simétricas.
 - **Mac** :Proporciona las funciones de un generador de códigos de autentificación de mensajes.
 - **SecretKeyFactory** :Representa un factoría de claves secretas.
+
+En la encriptación y desencriptación hay diferentes algoritmos que se puden utilizar como MD5, SHA, RSA o AES. En nuestro caso hemos probado el algoritmo **AES**.
+
+![Crypto1](https://user-images.githubusercontent.com/72611127/101518072-baa6f380-3981-11eb-94ee-6c0092c7005a.jpeg)
+![Crypto2](https://user-images.githubusercontent.com/72611127/101518076-bbd82080-3981-11eb-94e3-dd17abb16c96.jpeg)
+![Crypto3](https://user-images.githubusercontent.com/72611127/101518081-bda1e400-3981-11eb-841c-1b5446830655.jpeg)
