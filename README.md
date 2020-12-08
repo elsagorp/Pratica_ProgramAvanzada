@@ -426,5 +426,12 @@ Esta aplicación lo que hace es Lo que hace es enviarnos warnings a la lista de 
 
 
 ## Librería Crypto
+Proporciona las clases e interfaces para **realizar operaciones criptográficas**. Las operaciones criptográficas definidas en este paquete incluyen encriptación, generación de claves y acuerdo de claves y generación de códigos de autentificación de mensajes (MAC).
 
->>>>>>> ea79cc2d96f39a4ff0d0a09c3a383211f63c550f
+Las clases más importantes incluidas en paquete son:
+
+- **Cipher** :Repesenta un algoritmo de cifrado.
+- **KeyAgreement** :Proporciona la funcionalidad de un protocolo de acuerdo o intercambio de claves.
+- **KeyGenerator** :Propociona las funciones de un generador de claves simétricas.
+- **Mac** :Proporciona las funciones de un generador de códigos de autentificación de mensajes.
+- **SecretKeyFactory** :Representa un factoría de claves secretas.
