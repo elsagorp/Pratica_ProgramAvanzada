@@ -1,5 +1,6 @@
 package Pratica3.Tests;
 import Pratica3.Client;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -8,7 +9,6 @@ class ClientTest {
 
 	Client cl = new Client();
 	
-
 
 
 	@Test

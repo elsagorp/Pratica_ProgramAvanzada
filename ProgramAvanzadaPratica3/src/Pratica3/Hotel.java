@@ -12,8 +12,9 @@ public class Hotel implements Building{
 	private boolean full;
 	private boolean pool;
 	private boolean rest;
+	private float prize;
 	
-	public Hotel(String hotelName, String address, String city, int numRoom,int numStars, boolean full,boolean pool, boolean rest) {
+	public Hotel(String hotelName, String address, String city, int numRoom,int numStars, boolean full,boolean pool, boolean rest, float prize) {
 		
 		this.hotelName = hotelName;
 		this.address = address;
@@ -23,9 +24,18 @@ public class Hotel implements Building{
 		this.full = full;
 		this.pool = pool;
 		this.rest = rest;
+		this.prize = prize;
 
 	}
 	
+	public float getPrize() {
+		return prize;
+	}
+
+	public void setPrize(float prize) {
+		this.prize = prize;
+	}
+
 	public Hotel() {
 		
 	}

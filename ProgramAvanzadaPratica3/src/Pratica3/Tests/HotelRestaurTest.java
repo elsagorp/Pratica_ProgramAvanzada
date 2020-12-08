@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
 public class HotelRestaurTest {
-	HotelRestaur h = new HotelRestaur("Loran","Parliament street", "Canada", 100,1, true,false,true, false, "Osaka", "Japanese food", 25, 4,90);
+	HotelRestaur h = new HotelRestaur("Loran","Parliament street", "Canada", 100,1, true,false,true, 28, false, "Osaka", "Japanese food", 25, 4,90);
 
 	@Test
 	public void test() {

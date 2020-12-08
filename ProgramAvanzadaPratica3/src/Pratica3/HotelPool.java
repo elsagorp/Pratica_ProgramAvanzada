@@ -9,9 +9,9 @@ public class HotelPool extends Hotel implements Building{
 	private boolean outpool;
 	
 	
-	public HotelPool(String hotelName1, String address1, String city1, int numRoom1, int numStars1, boolean full1,boolean pool,boolean rest,boolean outpool, int numHamm1, int maxCapacity1) {
+	public HotelPool(String hotelName1, String address1, String city1, int numRoom1, int numStars1, boolean full1,boolean pool,boolean rest, float prize,boolean outpool, int numHamm1, int maxCapacity1) {
 		
-		super(hotelName1, address1, city1,  numRoom1, numStars1, full1,pool,rest);
+		super(hotelName1, address1, city1,  numRoom1, numStars1, full1,pool,rest,prize);
 		this.outpool = outpool;
 		this.numHamm = numHamm1;
 		this.maxCapacity = maxCapacity1;

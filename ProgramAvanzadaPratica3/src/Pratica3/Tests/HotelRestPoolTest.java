@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 
 class HotelRestPoolTest {
-	HotelRestPool h = new HotelRestPool("Vipen","Gijin street", "Berlin", 145,2, true ,true,true, false, "Skykitchen","Traditional german food",20,1,40,true,10,20);
+	HotelRestPool h = new HotelRestPool("Vipen","Gijin street", "Berlin", 145,2, true ,true,true, 55, false, "Skykitchen","Traditional german food",20,1,40,true,10,20);
 	@Test
 	final void test() {
 		assertEquals(false, h.isRestaurTerrace());
