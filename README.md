@@ -253,6 +253,12 @@ En esta prática esto lo hemos utilizado para leer los menus de los diferentes r
 	 }	 
 
 ```
+Los **ficheros creados para cada restaurante y su dirección**(la dirección se refiere a donde se encuentran dentro de la biblioteca) son los siguientes:
+
+![LecturaFichero1](https://user-images.githubusercontent.com/72611127/101522175-2c357080-3987-11eb-87bc-6891958b15b4.jpeg)
+
+![LecturaFichero2](https://user-images.githubusercontent.com/72611127/101522181-2dff3400-3987-11eb-9c30-637d85e53829.jpeg)
+
 
 Y despues introduciendo esta función en el menu, para poder escribir por pantalla el nombre del restaurante que quieras mirar. Quedaría de esta manera:
 
