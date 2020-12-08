@@ -206,7 +206,7 @@ BufferedReader br = new BufferedReader(fr);
 ...
 String linea = br.readLine();
 ```
-En esta prática esto lo hemos utilizado para leer los menus de los diferentes rstaurantes. Para esto hemos hecho una función dentro de la  **Lista de hotels** para dependiendo que restaurante quiera saber el menu, salga el menu de uno u otro. Esta es la función que lee los menus:
+En esta prática esto lo hemos utilizado para leer los menus de los diferentes rstaurantes. Para esto hemos hecho una función dentro de la  **Lista de hotels** para dependiendo que restaurante quiera saber el menu, salga el menu de uno u otro. Teniedno en cuenta que hay que crear los ficheros de texto ```nombreRestaurante.txt ```, con dentro los menus que quieras.  Esta es la función que lee los menus:
 ```ruby
 	 public void readMenu(String restName) {
 		 FileReader fil = null;
