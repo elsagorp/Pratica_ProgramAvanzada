@@ -198,7 +198,45 @@ Hemos utilizado la biblioteca ```import java.util.ArrayList; ``` para poder util
 
 
 ## Lectura de ficheros
-Para leer un fichero de texto normalmente se usan las **clases File y Scanner**. La **clase File** ofrece el método ```exists()``` para saber si un fichero existe o no. Para leer el contenido del fichero se crea una instancia de la **clase Scanner** que recibe como argumento la instancia del fichero de texto. La clase Scanner ofrece el método ```hasNext()``` para saber si hay más elementos que leer los métodos ```next()``` y ```nextLine()```para leer el siguiente elemento o una línea entera. 
+Podemos abrir un fichero de texto para leer usando la **clase FileReader**. Esta clase tiene métodos que nos permiten leer caracteres. Sin embargo, suele ser habitual querer las líneas completas. **FileReader** no contiene métodos que nos permitan leer líneas completas, pero sí **BufferedReader**. Afortunadamente, podemos construir un BufferedReader a partir del FileReader de la siguiente forma: 
+```ruby
+File archivo = new File ("C:\\archivo.txt");
+FileReader fr = new FileReader (archivo);
+BufferedReader br = new BufferedReader(fr);
+...
+String linea = br.readLine();
+```
+En esta prática esto lo hemos utilizado para leer los menus de los diferentes rstaurantes. Para esto hemos hecho una función dentro de la  **Lista de hotels** para dependiendo que restaurante quiera saber el menu, salga el menu de uno u otro. Esta es la función que lee los menus:
+```ruby
+	 public void readMenu(String restName) {
+		 FileReader fil = null;
+		 BufferedReader bf = null;
+		 
+		 String menu = "";
+		 
+		 try {
+			 
+			 String rout = "C:\\Users\\jfgor\\Desktop\\SegundoAñoUniversidad\\ProgramAvanz\\MenusPratica4\\" + restName + ".txt";
+			 
+			 fil = new FileReader (rout);
+			 bf = new BufferedReader(fil);
+			 
+			 String line;
+			 while((line = bf.readLine()) != null) {
+				
+				 menu = menu + line + "\n";
+				 
+			 }
+		 }catch(Exception e) {
+			 
+		 }
+		 
+		 System.out.println(menu);
+	 }
+	 
+
+```
+
 
 ## Menu
 Hemos creado una clase **Menu** con un static void main. En esta clase es donde se crearan los diferentes objetos. Y donde estará situado el código que interactua con las personas que usen este programa. Y se irán llamando a las diferentes funciones.
