@@ -1,0 +1,16 @@
+Sopas:
+Sopa de miso ------------ 15€
+Yakimeshi --------------- 18€
+Sopa de arroz con pollo-- 20€
+
+Rollos de sushi:
+Kami Maki(4 piezas)------- 19€
+Tako Maki(4 piezas)------- 22€
+Filadelfia Maki ---------- 25€
+
+Sashimi:
+Salmón ------------------- 12€
+Pulpo -------------------- 12€
+Atún --------------------- 14€
+Pez mantequilla ---------- 15€
+

@@ -1,0 +1,18 @@
+Entrantes:
+Paleta de salchichas ------- 15,80€
+Paté Alemán ---------------- 7,50€
+Salmón marinado ------------ 10€
+Semmelknodel --------------- 4,90€
+Weissbier obatzda ---------- 6,80€
+
+Carnes:
+Codillo asado Kruger ------- 14€
+Ternera rellena ------------ 12,50€
+Schnitzel de pollo --------- 16€
+Schnitzel de cerdo --------- 18,50€
+Gulash de ternera ---------- 17€
+
+Cremas:
+Sopa de cebolla ------------ 4,75€
+Gumesespaguetti ------------ 8€
+Pasta alemana con queso ---- 9,50€

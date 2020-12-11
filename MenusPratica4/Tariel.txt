@@ -1,0 +1,14 @@
+Pizza:
+Margarita ----------------- 30€
+Bufala -------------------- 28,50€
+Diavola ------------------- 27€
+Cuatro quesos ------------- 25€
+
+Pasta:
+Espaguetis boloñesa ------- 28€
+Raviolis de espinacas ----- 25€
+Conquelioni con verduras -- 21€
+Risotto ------------------- 30€
+
+Lasaña -------------------- 23€
+

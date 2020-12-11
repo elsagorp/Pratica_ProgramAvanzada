@@ -1,0 +1,17 @@
+Entrantes:
+Jamón serrano --------- 19€
+Pulpo a la gallega ---- 20€
+Gambas al ajillo ------ 16,50€
+Tortilla de patata ---- 18€
+
+Paellas:
+Paella de marisco ----- 28€
+Paella Valenciana ----- 32€
+Fideua de marisco ----- 26,50€
+Paella de carne ------- 30€
+
+Platos de cuchara:
+Lentejas -------------- 22€
+Caldo de la casa ------ 25€
+Fabada Asturiana ------ 26€
+Patatas a la riojana -- 19€
